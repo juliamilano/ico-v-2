@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title>Landing</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:image" content="path/to/image.jpg">
+    <!--Для копирования в соц. сети-->
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./libs/animate.css">
+    <link rel="stylesheet" href="./libs/slick/slick.css">
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="./libs/owl-carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/owl-carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-media.css">
+    <link rel="stylesheet" href="./css/about3.css">
+
+</head>
+<body>
+<!--<a href="#" class="toggle-mnu"><span></span></a>-->
+
+<div class="wrapper-popup wrapper-popup-log-in">
+    <div class="popup-body-block">
+        <span class="close" onclick="closePopup('.wrapper-popup')"></span>
+        <div class="block_login-body">
+            <form action="" method="" name="">
+                <div class="form-group">
+                    <div class="mdl-textfield">
+                        <input type="text" name="login" id="p-login" class="mdl-textfield__input" maxlength="18"
+                               required>
+                        <label class="mdl-textfield__label" for="p-login">Login</label>
+                        <span class="mdl-textfield__span">Login</span>
+                        <span class="mdl-textfield__error">Invalid Login</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="mdl-textfield">
+                        <input type="password" name="password" id="p-password" class="mdl-textfield__input" required>
+                        <label class="mdl-textfield__label" for="p-password">Password</label>
+                        <span class="mdl-textfield__span">Password</span>
+                        <span class="mdl-textfield__error">Invalid Password</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="mdl-textfield">
+                        <button type="submit" class="btn login__btn_margin">Sign in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="main">
+    <div class="b__header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1">
+                    <div class="image-logo">
+                        <img src="/img/logo.png" alt="" width="42">
+                    </div>
+                </div>
+                <div class="col-sm-7 offset-sm-1">
+                    <div class="wrap_head-navbar">
+                        <ul class="ul_nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Lorem</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="p-t-20 p-t-10">
+                        <div id="run-div"></div>
+                        <a href="javascript:void(0)" class="link-head btn" id="feedback">Обратная связь</a>
+                        <a href="javascript:void(0)" class="link-head btn link-head-login"
+                           onclick="openPopup('.wrapper-popup-log-in')">Вход</a>
+
+
+                        <div class="head-lang">
+                            <div class="lang-item">
+                                <a href="">ru</a>
+                            </div>
+                            <div class="lang-item">
+                                <a href="">en</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-11">
+                    <div class="block__header-middle">
+                        <div class="header-h1">О компании</div>
+                        <p class="header-h1-sub">Компания «Х» инвестор в коммерческую недвижимость  с высокой рентабельностью.</p>
+                        <p class="header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id feugiat dui, ac viverra augue. Aenean nec eleifend elit, consectetur ultrices nisl. Nam accumsan ante nec velit efficitur, vel viverra metus elementum. Fusce tempor lorem nec fermentum suscipit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id feugiat dui, ac viverra augue. Aenean nec eleifend elit, consectetur ultrices nisl. Nam accumsan ante nec velit efficitur, vel viverra metus elementum. Fusce tempor lorem nec fermentum suscipit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-11">
+                    <div class="block__projects">
+                        <h2 class="h2-project">Наши проекты</h2>
+                        <div class="wrapper-slider-project">
+                            <div class="project-slide-item">
+                                <div class="flex-row">
+                                    <div class="img-wrap">
+                                        <img src="./img/ico-logo-font.jpg" alt="">
+                                    </div>
+                                    <div class="block__project-description">
+                                        <div class="project_name">
+                                            Ico company
+                                        </div>
+                                        <div class="project_sub-name">
+                                            Рентабельность: Lorem ipsum
+                                        </div>
+                                        <p class="project-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id feugiat dui, ac viverra augue. Aenean nec eleifend elit, consectetur ultrices nisl. Nam accumsan ante nec velit efficitur, vel viverra metus elementum.  Nam accumsan ante nec velit efficitur, vel viverra metus elementum.  Nam accumsan ante nec velit efficitur, vel viverra metus elementum. .  Nam accumsan ante nec velit efficitur, vel viverra metus elementum. </p>
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-slide-item flex-row">
+                                <div class="flex-row">
+                                    <div class="img-wrap">
+                                        <img src="./img/ico-logo-font.jpg" alt="">
+                                    </div>
+                                    <div class="block__project-description">
+                                        <div class="project_name">
+                                            Ico company
+                                        </div>
+                                        <div class="project_sub-name">
+                                            Рентабельность: Lorem ipsum
+                                        </div>
+                                        <p class="project-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id feugiat dui, ac viverra augue. Aenean nec eleifend elit, consectetur ultrices nisl. Nam accumsan ante nec velit efficitur, vel viverra metus elementum.  Nam accumsan ante nec velit efficitur, vel viverra metus elementum.  Nam accumsan ante nec velit efficitur, vel viverra metus elementum. .  Nam accumsan ante nec velit efficitur, vel viverra metus elementum. </p>
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="block__investition">
+                        <h1>Инвестировать </h1>
+                        <div class="block__invest-form">
+                            <form action="">
+                                <div class="invest-form-first-row flex-row m-b-70">
+                                    <div class="form-group">
+                                        <div class="mdl-textfield">
+                                            <input type="text" name="name" id="name-invest" class="mdl-textfield__input" maxlength="18"
+                                                   required>
+                                            <label class="mdl-textfield__label mdl-textfield__label__name" for="p-login">Name</label>
+                                            <span class="mdl-textfield__error">Invalid Name</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="mdl-textfield">
+                                            <input type="text" name="value-coin" id="value-invest" class="btn mdl-textfield__input" maxlength="18"
+                                                   required>
+                                            <label class="mdl-textfield__label mdl-textfield__label__value-coin" for="p-login">Кол. коинов</label>
+                                            <span class="mdl-textfield__error">Invalid Value </span>
+                                        </div>
+                                    </div>
+                                    <select name="" id="select-invest-group">
+                                        <option value="BTC" selected>BTC</option>
+                                        <option value="BTC2">2</option>
+                                        <option value="BTC3">3</option>
+                                        <option value="BTC4">4</option>
+                                    </select>
+                                    
+                                </div>
+                                <div class="invest-form-second-row flex-row m-b-130">
+                                    <div class="form-group">
+                                        <div class="mdl-textfield">
+                                            <input type="text" name="email" id="email-invest" class="mdl-textfield__input" maxlength="18"
+                                                   required>
+                                            <label class="mdl-textfield__label mdl-textfield__label__email" for="p-login">Email</label>
+                                            <span class="mdl-textfield__error">Invalid Email </span>
+                                        </div>
+                                    </div>
+                                    <button type="" class="btn">Инвестировать</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+</div>
+<script src="./libs/jquery/jquery-3.2.1.min.js"></script>
+<script src="./libs/owl-carousel/dist/owl.carousel.min.js"></script>
+<script src="./libs/slick/slick.min.js"></script>
+<script src="./libs/greensock-js/src/uncompressed/TweenMax.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/about.js"></script>
+</body>
+</html>
