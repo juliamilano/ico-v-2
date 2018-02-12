@@ -23,14 +23,23 @@ $(function () {
     //         e.preventDefault();
     //     });
     // });
-
-    $('#feedback').click(function () {
+    var heightOffsetFeedbackBlock = $('#feedbackBlock').offset().top;
+    console.log(heightOffsetFeedbackBlock);
+    $('#feedback').click(function (e) {
         var a = $(this).outerWidth();
         $('#run-div').animate({
             'left': '0%',
             // 'width': '140px'
             'width': a
         });
+
+        e.preventDefault();
+
+        setTimeout(function(){
+            $('.scrollbar-custom').animate({
+                scrollTop: heightOffsetFeedbackBlock
+            }, 1000);
+        },500);
     });
 
     $('.link-head-login').click(function () {
@@ -91,7 +100,7 @@ $(function () {
         var ps = new PerfectScrollbar(this, {
            // wheelSpeed: 2,
             wheelPropagation: true,
-            suppressScrollX: true,
+            suppressScrollX: true
            // minScrollbarLength: 20
         });
         ps.update();
@@ -155,6 +164,19 @@ $(function () {
        }
 
    });
+
+    var question = $('.wrapper-faq-group .question');
+    var answer = $('.wrapper-faq-group .answer');
+
+
+    $(question).on('click', faqAccordion);
+
+    function faqAccordion(){
+        $(answer).not($(this).next()).slideUp(400);
+        $(this).next().slideToggle(500);
+        return false;
+    }
+
 
 
 ///// don't touch it!!! final parenthesis

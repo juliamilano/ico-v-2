@@ -70,7 +70,7 @@ body {
     transition: 0.3s;
     position: relative;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     font-weight: 400;
     font-family: "Affect", "OpenSans", sans-serif;
 }
@@ -305,7 +305,7 @@ input:focus, textarea{
 
 /* active state */
 /*input:invalid{*/
-    /*color: transparent;*/
+/*color: transparent;*/
 /*}*/
 /*input:focus ~ label, input:valid ~ label{*/
 /*top:-10px;*/
@@ -488,203 +488,55 @@ a.link-head.btn-active{
 
 
 /* page 3 */
-.block__header-middle{
-    margin-top: 100px;
-    margin-bottom: 35px;
-    color: #ffffff;
-    font-family: Affect;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-.block__header-middle .header-h1{
-    font-size: 65px;
-    font-weight: 700;
-    letter-spacing: 2.8px;
-}
-.header-h1-sub{
-    font-size: 22px;
-    padding: 0;
-    margin: 25px 0 50px;
-}
-.header-description{
-    font-family: 'Roboto';
-    font-size: 25px;
-    font-weight: 400;
-    text-transform: none;
-}
-.block__projects{
-    margin-top: 90px;
-}
-.block__projects h2{
-    color: #ffffff;
-    font-family: Affect;
-    font-size: 29px;
-    font-weight: 400;
-    text-transform: uppercase;
-    position: relative;
-    margin-bottom: 40px;
-}
-.h2-project:before{
-    content: "";
-    width: 71px;
-    height: 3px;
-    background-color: #ffffff;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-
-}
-.wrapper-slider-project{
-    height: 400px;
-    width: 100%;
-}
-.block__project-description{
-    max-width: 600px;
-}
-.img-wrap{
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    background: transparent;
-    border-radius: 10px;
-    position: relative;
-
-    margin-right: 85px;
-}
-.img-wrap img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+/*content main*/
+.block__main-content.scrollbar-custom{
+    overflow: auto;
+    height: calc(100vh - 80px);
     max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
+}
+.ps__rail-x,
+.ps__rail-y {
+    opacity: 0.6;
+}
+.ps__rail-y{
+    top: 95px !important;
+}
+/*content main*/
 
-    transform: translate(-50%, -50%);
-}
-.block__project-description .project_name{
-    color: #092621;
-    font-family: 'Affect';
-    font-size: 43px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    padding: 0;
-}
-.block__project-description .project_sub-name{
+.block__profile{
+    min-height: 500px;
     color: #ffffff;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: 400;
+    font-family: Affect;
+    margin-top: 150px;
 }
-.block__project-description .project-description-text{
-    color: #ffffff;
-    font-family: Roboto;
-    font-size: 17px;
-    padding: 0;
-    margin: 25px 0;
-    font-weight: 400;
+.block__profile .profile-image{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.block__project-description .btn{
-    padding: 10px 40px;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-.slick-dots{
-    padding-left: 15%;
-    box-sizing: border-box;
-}
-.block__investition{
-
-}
-.block__investition .form-group{
-    margin-right: 30px;
-}
-.block__investition .invest-form-second-row .form-group{
-    margin-right: 100px;
-}
-.block__investition h1{
-    color: #ffffff;
-    font-family: 'Affect';
-    font-size: 65px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2.8px;
-    margin: 150px 0 100px;
-}
-.block__investition #name-invest{
-    width: 340px;
-}
-.block__investition #value-invest{
-    width:  223px;
-}
-.block__investition #select-invest-group{
-    width:  223px;
-    background: transparent;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    color: #fff;
-    text-align: center;
-    text-align-last: center;
-}
-.block__investition select:focus{
-    outline: none;
-}
-.block__investition #select-invest-group option{
-    color: #303030;
-    text-align: center;
-}
-.block__investition #email-invest{
-    width: 500px;
-}
-.block__investition button.btn{
-    padding: 10px 70px;
+.block__profile .profile-image .round-profile{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     box-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
-    border-radius: 45px;
-    border: 3px solid #ffffff;
-    background-color: #ffffff;
-
-    color: #092621;
+    background-image: linear-gradient(143deg, #0ac2c0 0%, #00a0b7 100%);
+    color: #ffffff;
     font-family: 'Affect';
-    font-size: 17px;
+    font-size: 78px;
+    font-weight: 400;
+}
+.block__profile .profile-name{
+    text-align: center;
+    font-size: 39px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.73px;
+    letter-spacing: 1.68px;
+    margin: 45px 0;
 }
-.m-b-70{
-    margin-bottom: 70px;
-}
-.m-b-130{
-    margin-bottom: 130px;
-}
-.mdl-textfield__label__value-coin{
-    top: 30%;
-}
-.block__investition .mdl-textfield input{
-    text-align: left;
-    color: #ffffff;
-    font-family: 'Affect';
-    font-size: 25px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1.08px;
-}
-#value-invest{
-    text-align: center;
-}
-.mdl-textfield__label__email,
-.mdl-textfield__label__name{
-    text-align: left;
-    color: #ffffff;
-    font-family: 'Affect';
-    font-size: 25px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1.08px;
-    top: 20%;
-    left: 0;
-    transform: translateX(0%);
-}
-
-/* page 3 */

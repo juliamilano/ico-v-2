@@ -70,7 +70,7 @@ body {
     transition: 0.3s;
     position: relative;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     font-weight: 400;
     font-family: "Affect", "OpenSans", sans-serif;
 }
@@ -384,7 +384,7 @@ input:focus, textarea{
 }
 .b__header{
     min-height: 963px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 100%;
     background: url("../img/grid.png") no-repeat, #40aaa8;
     background-size: cover, 100% 100%;
@@ -487,198 +487,112 @@ a.link-head.btn-active{
 /*lang*/
 
 
-/* page 2 */
-.m-b-50{
-   margin-bottom: 50px;
+/* page 3 */
+/*content main*/
+.block__main-content.scrollbar-custom{
+    overflow: auto;
+    height: calc(100vh - 80px);
+    max-height: 100%;
 }
-.block__header-middle{
-   margin-top: 100px;
-   margin-bottom: 35px;
-    color: #ffffff;
-    font-family: 'Affect';
-    font-weight: 400;
-    text-transform: uppercase;
+.ps__rail-x,
+.ps__rail-y {
+    opacity: 0.6;
 }
-.block__header-middle .stage-name-h3{
-    font-size: 16px;
+.ps__rail-y{
+    top: 95px !important;
 }
-.block__header-middle .stage-name-h1{
+/*content main*/
+
+.block__news{
+   min-height: 500px;
+   color: #ffffff;
+   font-family: Affect;
+   margin-top: 150px;
+}
+.block__news h1{
     font-size: 65px;
     font-weight: 700;
-    letter-spacing: 2.8px;
-}
-.block__header-middle .stage-value-h3{
-    font-size: 25px;
-    font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: 2.8px;
+    margin-bottom: 100px;
 }
-.wrapper-info-block{
-    /*flex-basis: 50%;*/
-    background-color: #1e7276;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    padding: 25px 50px 25px 25px;
+.block__news .wrap_news-group{
+    flex-wrap: wrap;
 }
-.wrapper-info-block-1{
-    border-radius: 10px 0 0 10px;
-    height: 165px
+.block__news .item-news{
+    width: 330px;
+    height: 700px;
+    margin-right: 75px;
+    margin-bottom: 90px;
 }
-.wrapper-info-block-2{
-    border-radius: 0 10px 10px 0px;
-    height: 165px
-}
-.wrap-group-info-block.gr-1{
-  width: 360px;
-    margin-right: 30px;
-}
-.wrap-group-info-block.gr-2{
-    width: 455px;
-}
-.wrapper-info-block-3{
-    width: 100%;
-    border-radius: 10px 0 0 10px;
-    background-color: #1e7276;
-    height: 165px;
-    margin-bottom: 30px;
-}
-.wrapper-info-block-4{
-    width: 100%;
-    border-radius: 10px 0 0 10px;
-    background-color: #1e7276;
-    height: 165px;
-}
-.wrapper-info-block-5{
-    width: 100%;
-    height: 360px;
-    border-radius: 0 10px 10px 0;
-    padding: 25px;
+@media only screen and (min-width: 1170px) {
+    .block__news .item-news:nth-child(3n+3){
+        margin-right: 0px;
+    }
 }
 
-.mdl__sale-status{
-    margin: 0;
-    font-size: 13px;
-    font-weight: 400;
-    margin-bottom: 10px;
+.block__news .item-news .img-wrap{
+    width: 330px;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    background: #f8f8f8;
+    margin-bottom: 30px;
 }
-.mdl__sale-value{
-    margin: 0;
+.block__news .item-news .img-wrap img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.news-name{
+    color: #092621;
     font-family: 'Affect';
     font-size: 30px;
     font-weight: 400;
+    text-transform: uppercase;
 }
-.mdl__price-value{
-    margin: 0;
-    color: #092621;
+.news-date{
+    color: #ffffff;
     font-family: 'Affect';
-    font-size: 20px;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    margin-bottom: 25px;
+}
+.news-descriptions{
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 17px;
     font-weight: 400;
+    margin-bottom: 45px;
 }
-.mdl__percent{
-    margin: 0;
-    color: #092621;
-    font-family: 'Affect';
-    font-size: 20px;
+.item-news a.btn{
+    padding: 15px 45px;
+    font-size: 15px;
     font-weight: 400;
-}
-.wrap-range{
-    margin: 0;
-    margin: 10px 0 0;
-}
-.range-area{
-    height: 8px;
-    width: 100%;
-    position: relative;
-    padding: 2px;
+    text-transform: uppercase;
+    border-radius: 31px;
 
 }
-.range-area:before{
-    content: "";
-    height: 8px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
-    background-color: #21918b;
-    opacity: 0.3;
-}
-.range-indicator{
-    width: 30%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: #ffffff;
-}
-.wrapper-info-block__range-info{
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-}
-.wrapper-info-block-addition .link{
-    color: #092621;
-    font-family: Roboto;
-    font-size: 13px;
-    font-weight: 400;
-    text-decoration: underline;
-}
-.mdl__price-value-big{
-    color: #ffffff;
-    font-family: 'Affect';
-    font-size: 50px;
-    font-weight: 400;
-}
-.wrapper-info-block-4 .mdl__sale-status,
-.wrapper-info-block-3 .mdl__sale-status{
-    margin: 0;
-}
-.block__timer-h3{
-    color: #ffffff;
-    font-family: Affect;
-    font-size: 22px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-}
-.wrapper_block__timer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    color: #ffffff;
-    font-family: 'Affect';
-    font-size: 94px;
-    font-weight: 400;
-    margin-bottom: 80px;
-}
-.dots{
-    text-align: center;
-}
-.timer-days,
-.timer-hours,
-.timer-minute{
-    position: relative;
-}
-.sign-time{
-    position: absolute;
-    color: #ffffff;
-    font-family: 'Affect';
-    font-size: 12px;
-    font-weight: 400;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.wrap-button{
-    text-align: center;
+.wrap-button-add-news{
     width: 100%;
 }
-.wrap-button .bnt{
-    padding: 15px 100px;
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
+.wrap-button-add-news .btn{
+    width: 200px;
+    display: block;
+    padding: 15px 40px;
     border-radius: 31px;
+    border: 3px solid #ffffff;
     background-color: #ffffff;
+    color: #367f89;
+    font-family: Affect;
+    font-size: 15px;
+    font-weight: 400;
     text-transform: uppercase;
+    margin: 30px auto;
 }
-button:focus{
-    outline: none;
-}
-/* page 2 */

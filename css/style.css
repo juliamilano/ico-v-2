@@ -916,6 +916,10 @@ button.login__btn_margin{
 	background-color: #ffffff;
 	text-transform: uppercase;
 }
+button{
+	cursor: pointer;
+}
+
 button:focus{
 	outline: none;
 }
@@ -1152,7 +1156,7 @@ button:focus{
 	text-transform: uppercase;
 	position: relative;
 }
-.m-r-50{
+.m-b-50{
 	margin-bottom: 60px;
 }
 .block__fourth .h2__about-project:before{
@@ -1519,6 +1523,7 @@ button:focus{
 	min-height: 500px;
 	color: #ffffff;
 	font-family: 'Affect';
+	margin-bottom: 100px;
 }
 .block__tenth h1.h1{
 	font-size: 65px;
@@ -1570,3 +1575,107 @@ button:focus{
 	background-position: center;
 }
 /*page 9*/
+
+/*page 10 faq*/
+.block__eleventh{
+	min-height: 500px;
+	color: #fff;
+	width: 100%;
+}
+.block__eleventh h1{
+	font-family: 'Affect';
+	font-size: 65px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 70px;
+	letter-spacing: 2.8px;
+}
+.block_faq{
+	margin-bottom: 130px;
+}
+
+.block__eleventh .wrapper-faq-group .question{
+	min-height: 70px;
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+	border-radius: 7px;
+	background-color: #1e7276;
+	font-family: 'Affect';
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.95px;
+	padding: 20px 30px;
+	margin-bottom: 30px;
+}
+.block__eleventh .wrapper-faq-group .question:after{
+	content: "\f107";
+	font-family: "FontAwesome";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+.block__eleventh .wrapper-faq-group .answer{
+	display: none;
+	margin: 70px 0;
+}
+
+/*feedback*/
+.wrapper__feedback-block{
+	margin-bottom: 100px;
+}
+.wrapper__feedback-block .form-group-input{
+	max-width: 340px;
+}
+.block__eleventh input{
+	width: 336px;
+	text-align: left;
+}
+.m-r-50{
+	margin-right: 50px;
+}
+.block__eleventh .mdl-textfield__label{
+	left: 0;
+	transform: translateX(0);
+	top: 30%;
+	font-size: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+	/* Text style for "тел" */
+	letter-spacing: 1.08px;
+}
+.mdl-textfield textarea{
+	background: transparent;
+	width: 100%;
+	border: 3px solid #fff;
+	border-bottom-left-radius: 19px;
+	color: #fff;
+	font-family: 'Roboto';
+	padding: 30px 20px;
+	font-size: 15px;
+	font-weight: 400;
+}
+.block__eleventh .wrap-button{
+	text-align: right;
+	width: 100%;
+}
+.m-b-100{
+	margin-bottom: 100px;
+}
+.m-b-80{
+	margin-bottom: 80px;
+}
+.block__eleventh .wrap-button .bnt{
+	padding: 15px 100px;
+	box-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
+	border-radius: 31px;
+	background-color: #ffffff;
+	text-transform: uppercase;
+}
+/*feedback*/
+/*page 10 faq*/
